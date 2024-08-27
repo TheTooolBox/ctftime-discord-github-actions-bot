@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
- #     - uses: actions/checkout@v2
- #       with:
- #         token: ${{ secrets.GITHUB_TOKEN }}
- #         submodules: true
+      - uses: actions/checkout@v2
+        with:
+           token: ${{ secrets.GITHUB_TOKEN }}
+           submodules: false
 
       - uses: actions/cache@v2
         with:
